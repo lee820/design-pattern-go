@@ -3,10 +3,10 @@ package adapter
 import "testing"
 
 func Test(t *testing.T) {
-	t.Run("audio Test:", AudioPlayerRun)
+	t.Run("audio Test:", AudioPlayerTest)
 }
 
-func AudioPlayerRun(t *testing.T) {
+func AudioPlayerTest(t *testing.T) {
 	audio := NewAudioPlayer()
 	audio.Play("mp4", "yello.mp4")
 	audio.Play("rmvb", "夜的第七章.rmvb")
