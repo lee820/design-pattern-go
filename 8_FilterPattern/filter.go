@@ -125,9 +125,10 @@ func (of *OrFilter) PersonFilter(persons *list.List) list.List {
 
 	//找出既是firstPersons和otherPersons中所有人，去除重复的人。
 	for i := otherPersons.Front(); i != nil; i = i.Next() {
+		allpersons.PushBack(i.Value)
 		for j := firstPersons.Front(); j != nil; j = j.Next() {
 			if reflect.DeepEqual(i.Value, j.Value) {
-				allpersons.PushBack(i.Value)
+				//do nothing
 			} else {
 				allpersons.PushBack(j.Value)
 			}
