@@ -11,18 +11,18 @@ type Item interface {
 	Price() float32
 }
 
-//Food 实物的接口
+//Food 食物的接口
 type Food interface {
 	Kind() string
 }
 
-//Staple 主食，实物接口的实例
+//Staple 主食，食物接口的实例
 type Staple struct{}
 
-//Drink 饮料，实物接口的实例
+//Drink 饮料，食物接口的实例
 type Drink struct{}
 
-//Snack 小吃，实物接口的实例
+//Snack 小吃，食物接口的实例
 type Snack struct{}
 
 //Kind 获取主食类型名称
