@@ -25,7 +25,7 @@ func (nr *NameRepository) GetIterator() func() (string, bool) {
 	}
 }
 
-//SetName 向姓名仓库添加名字，最大数量不能超过16
+//SetName 向姓名仓库添加名字
 func (nr *NameRepository) SetName(name string) {
 	nr.Names = append(nr.Names, name)
 }
